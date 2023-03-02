@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <title>Task Management Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-bar-menu">
+            <div class="menu">
+                <ul>
+                    <li><a href="#"><i class="fas fa-inbox"></i> Inbox</a></li>
+                    <li><a href="#"><i class="fas fa-star"></i> Today</a></li>
+                    <li><a href="#"><i class="fas fa-calendar"></i> Upcoming</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-alt"></i> Anytime</a></li>
+                    <li><a href="#"><i class="fas fa-calendar"></i> Someday</a></li>
+                    <li><a href="#"><i class="fas fa-trash"></i> Trash</a></li>
+                </ul>
+            </div>
+            <div class="category">
+                <h3 style="color: #f14646;"><i class="fas fa-circle"></i> Family</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Vacation Planning</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Buy a new car</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Festival Ideas</a></li>
+                </ul>
+                <br><hr><br>
+                <h3 style="color: #2dce2d;"><i class="fas fa-circle"></i> Work</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Onboarding Plan</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Invoice Review</a></li>
+                    <li><a href="#"><i class="fas fa-angle-right"></i> Presentation Work</a></li>
+                </ul><br>
+                <button id="addItem">+</button>
+            </div>
+        </div>
+        <div class="main-panel">
+            <div class="header">
+                <h2>Today Tasks</h2>
+                <ul>
+                    <li><a href="#"><i class="fas fa-user"></i></a> | <button id="addTask">+</button></li>
+                </ul>
+            </div>
+            <div class="tasks-menu">
+                <ul>
+                    <li><small>0</small><a href="#"> All</a></li>
+                    <li><a href="#">Important</a></li>
+                    <li><small>24</small><a href="#"> Notes</a></li>
+                    <li><a href="#">Links</a></li>
+                </ul>
+            </div>
+            <div class="panel">
+                <div class="task-panel">
+                    <div class="tasks">
+                        <ul>
+                            <li id="sel_item"><input type="checkbox" id="checklistItem"><a href="#"> Lorem ipsum dolor sit amet. </a><small id="st-approved">Approved</small></li>
+                            <li><input type="checkbox" id="checklistItem"><a href="#"> Lorem ipsum dolor sit amet. </a><small id="st-in-progress">In Progress</small></li>
+                            <li><input type="checkbox" id="checklistItem"><a href="#"> Lorem ipsum dolor sit amet. </a><small id="st-in-progress">In Progress</small></li>
+                            <li><input type="checkbox" id="checklistItem"><a href="#"> Lorem ipsum dolor sit amet. </a><small id="st-review">In Review</small></li>
+                            <li><input type="checkbox" id="checklistItem"><a href="#"> Lorem ipsum dolor sit amet. </a><small id="st-approved">Approved</small></li>
+                        </ul>
+                    </div>
+                    <div class="upcomingTasks">
+                        <h3>Upcoming Tasks</h3>
+                        <ul>
+                            <li><input type="checkbox" id="checklistItem"><a href="#"> Lorem ipsum dolor sit amet. </a><small id="st-inactive">Inactive</small></li>
+                            <li><input type="checkbox" id="checklistItem"><a href="#"> Lorem ipsum dolor sit amet. </a><small id="st-inactive">Inactive</small></li>
+                            <li><input type="checkbox" id="checklistItem"><a href="#"> Lorem ipsum dolor sit amet. </a><small id="st-inactive">Inactive</small></li>
+                            <li><input type="checkbox" id="checklistItem"><a href="#"> Lorem ipsum dolor sit amet. </a><small id="st-inactive">Inactive</small></li>
+                            <li><input type="checkbox" id="checklistItem"><a href="#"> Lorem ipsum dolor sit amet. </a><small id="st-inactive">Inactive</small></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="task-detail">
+                    <h3>Task Detail</h3>
+                    <hr><br><br>
+                    <h2>Task name</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora assumenda velit, voluptatibus mollitia soluta natus facere fuga debitis molestias reiciendis alias exercitationem. Eum repellat iure placeat explicabo esse! Unde, recusandae?</p>
+                    <br><hr><br>
+                    <h3>Task requirements</h3>
+                    <ul>
+                        <li>requirement item 1</li>
+                        <li>requirement item 2</li>
+                        <li>requirement item 3</li>
+                        <li>requirement item 4</li>
+                        <li>requirement item 5</li>
+                    </ul>
+                    <hr><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

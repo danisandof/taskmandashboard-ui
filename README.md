@@ -1,2 +1,3 @@
-# work-ui-taskmandashboard020323
-Este proyecto contiene una plantilla HTML/CSS de un panel de gestion de tareas.
+# Work UI Taskmandashboard
+![Imagen del Proyecto](screenshot-ui-taskmanager.png)
+<img src="tech-tag.png" width="60%">
